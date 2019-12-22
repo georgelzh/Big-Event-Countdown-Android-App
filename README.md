@@ -17,3 +17,6 @@ User can delete events by entering event id.
 
 
 Database type: SQlite
+
+
+APK File is inside the folder if you'd like to try the app.
