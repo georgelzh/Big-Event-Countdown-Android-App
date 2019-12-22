@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightPrimary"
+    android:foregroundGravity="center_vertical|center_horizontal"
+    android:keepScreenOn="false"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-10dp" />
+
+    <TextView
+        android:id="@+id/tv_welcomeText"
+        android:layout_width="335dp"
+        android:layout_height="63dp"
+        android:layout_margin="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/welcomeText"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btnAddDeleteEvent"
+        android:layout_width="208dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="addDeleteEventButtonOnClick"
+        android:text="@string/add_Delete_EventText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/event_list"
+        android:layout_width="412dp"
+        android:layout_height="390dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddDeleteEvent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_eventId"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:gravity="bottom|right"
+        android:text="@string/event_id"
+        app:layout_constraintBottom_toTopOf="@+id/event_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_eventName"
+        android:layout_width="145dp"
+        android:layout_height="20dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/event_name"
+        app:layout_constraintBottom_toTopOf="@+id/event_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_eventId"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_eventDate"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/event_date"
+        app:layout_constraintBottom_toTopOf="@+id/event_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_eventName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_eventCountdown"
+        android:layout_width="115dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/event_countdown"
+        app:layout_constraintBottom_toTopOf="@+id/event_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_eventDate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
