@@ -21,6 +21,6 @@ Database type: SQlite
 
 <!--- HTML markdown to center the image --->
 <p align="center">
-    <img alt="main_page" src="img/main_page.jpg"/>
-    <img alt="add_delete_page" src="img/add_delete_page.jpg"/>
+    <img alt="main_page" src="img/main_page.jpg" height="500" width="250"/>
+    <img alt="add_delete_page" src="img/add_delete_page.jpg" height="500" width="250"/>
 </p>
