@@ -19,4 +19,8 @@ User can delete events by entering event id.
 Database type: SQlite
 
 
-APK File is inside the folder if you'd like to try the app.
+<!--- HTML markdown to center the image --->
+<p align="center">
+    <img alt="main_page" src="img/main_page.jpg"/>
+    <img alt="add_delete_page" src="img/add_delete_page.jpg"/>
+</p>
